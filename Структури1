@@ -1,0 +1,26 @@
+#include <iostream>
+
+struct Student {
+	std::string name;
+	int age;
+	int averageGrade;
+};
+int main() {
+	int n;
+	std::cout << "Enter the number of students: ";
+	std::cin >> n;
+	Student student;
+	for (int i = 0; i < n; ++i) {
+		std::cout << "Enter name of student " << i + 1 << ": ";
+		std::cin >> student.name;
+		std::cout << "Enter his/her age: ";
+		std::cin >> student.age ;
+		std::cout << "Enter his/her average grade: ";
+		std::cin >> student.averageGrade;
+		
+	}
+	
+	for (int i = 0; i < n; ++i) {
+		std::cout << "Student " << i + 1 << ": " << student.name << ", Age: " << student.age << ", Average Grade: " << student.averageGrade << std::endl;
+	}
+}
