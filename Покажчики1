@@ -1,0 +1,9 @@
+#include<iostream>
+int main() {
+	int num;
+	std::cout << "Enter a number: ";
+	std::cin >> num;
+	int* ptr = &num;
+	*ptr += 1;
+	std::cout << "Changed number is: " << num << "\n";
+}
