@@ -1,0 +1,15 @@
+#include <iostream>
+int main() {
+	int arr[5] = { 1, 2, 3, 4, 5 };
+	int arrptr[5]{};
+	int sum = 0;
+	for (int i = 0; i < 5; i++) {
+		int* ptr = &arr[i];
+		arrptr[i] = *ptr;
+	}
+	for (int i = 0; i < 5; i++) {
+		sum += arrptr[i];
+	}
+	sum /= 5;
+	std::cout << "Average: " << sum << std::endl;
+}
