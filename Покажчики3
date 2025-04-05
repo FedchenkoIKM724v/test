@@ -1,0 +1,17 @@
+#include <iostream>
+
+int main() {
+    int size;
+    std::cout << "Enter a nukmber of elements: ";
+    std::cin >> size;
+    int* arr = new int[size];
+    for (int i = 0; i < size; i++) {
+        std::cout << "Enter element: " << i + 1<< "\n";
+        std::cin >> arr[i];
+    }
+    std::cout << "Arrange:\n";
+    for (int i = 0; i < size; i++) {
+        std::cout << arr[i] << " ";
+    }
+    delete[] arr;
+}
